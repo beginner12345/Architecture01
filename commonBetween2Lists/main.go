@@ -26,7 +26,7 @@ func getCommonBetween2Lists(l1, l2 *ListNode)(*ListNode, bool){
 		for i:=0;i<len2-len1;i++ {p2 = p2.Next}
 	}
 	//比较公共节点
-	for p1!= nil && p1!= nil {
+	for p1!= nil && p2!= nil {
 		if p1 == p2 {return p1, true}
 		p1, p2 = p1.Next, p2.Next
 	}
